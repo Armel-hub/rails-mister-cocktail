@@ -1,0 +1,9 @@
+<div class="shadow rounded bg-white p-4">
+  <h2>Add a dose:</h2>
+
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+
+    <%= f.submit 'Add dose', class: 'btn btn-success'%>
+  <% end %>
+</div>
