@@ -3,9 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .banner {
+  // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  background-color: white;
 }
 
 .banner h1 {
@@ -27,4 +29,7 @@
 
 body {
   background-color: #beebe9;
+
 }
+
+
