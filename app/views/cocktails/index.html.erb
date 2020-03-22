@@ -1,36 +1,86 @@
+<!--
+<nav class="navbar fixed-top bg-light border-bottom-0" >
+      <p id="nav"></p>
 
+    </nav>
 
-<div class="container">
+    <div class="container">
 
-
-<nav class="navbar navbar-light bg-light">
-  <p class="t-center "> Mister Cocktail </p>
-</nav>
-
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80);">
-
-    <h1>All Cocktails</h1>
-
-  </div>
-
-  <div class="d-flex p-20 align-items-center">
-      <p class="text"><%= link_to 'New cocktail', new_cocktail_path, class: 'btn btn-primary' %></p>
-  </div>
-
-  <div class="shadow mb-5 bg-white rounded">
-        <% @cocktails.each do |cocktail| %>
-        <div class="border-bottom py-2 px-3">
-          <div class="d-flex justify-content-between align-items-center">
-          <div>
-          <%= link_to cocktail.name, cocktail_path(cocktail), class: 'font-weight-bolder text-dark' %>
+      <div class="jumbotron" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80);">
+        <div class="container">
+          <h1 class="display-3">Mr Cocktail</h1>
+          <p class="text"><%= link_to 'Add cocktail', new_cocktail_path, class: 'btn btn-primary btn-lg' %></p>
         </div>
       </div>
+
+      <div class="container" id="cont">
+
+        <div class="row">
+
+          <% @cocktails.each do |cocktail| %>
+          <div class="col-md-2 col-lg-2 col-sx-12 col-sm-12" id="cock">
+          <%= link_to cocktail.name, cocktail_path(cocktail), class: 'font-weight-bolder text-dark' %>
+          </div>
+          <% end %>
+
+          </div>
+
+          </div>
+
+        </div>
+
+        <hr>
+
+      </div>
+
     </div>
+
+    <footer class="container">
+      <p>&copy; Company 2017-2018</p>
+    </footer>
+
+
+
+
+
+
+ -->
+
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
   <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Cocktails", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
+
+
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=825&q=80);">
+  <div class="container">
+    <h1> Bienvenue sur <strong> Mr Cocktails </strong> </h1>
+    <p> </p>
+  </div>
 </div>
-
-
-
-
